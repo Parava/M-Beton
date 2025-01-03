@@ -1,0 +1,72 @@
+.top-menu {
+    display: flex;
+    &__left {
+
+    }
+    &__left-menu{
+        display: flex;
+    }
+
+    &__left-item--logo {
+    }
+
+    &__left-item {
+    }
+
+    &__right {
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+
+    &__right-btn-mail {
+    }
+
+    &__right-btn-phone {
+    }
+
+    &__right-btn-basket {
+    }
+}
+
+// пока верстаю сразу под 2560
+.header {
+        
+    &__left {
+    }
+    &__left-title {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 100%;
+        letter-spacing: -5px;
+
+        color: $white;
+
+
+        /* Бетон в Санкт-Петербурге и Ленинградской области */
+
+
+
+
+
+
+    }
+
+    &__left-text {
+    }
+
+    &__left-btn-call {
+    }
+
+    &__left-btn-calc {
+    }
+
+    &__right {
+    }
+}
+.huinia {
+}
+.li-item {
+}
