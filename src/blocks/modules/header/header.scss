@@ -10,12 +10,15 @@
     &--right{
         width: 60%;
     }
-    & img{
-    }
 }
 .top-menu {
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
     &__left-menu{
         display: flex;
         gap: 20px;
@@ -27,10 +30,14 @@
     &__right {
         display: flex;
         gap: 20px;
+
+       
     }
     &__right-btn-mail {
+        color: $black;
     }
     &__right-btn-phone {
+        color: $white;
     }
     &__right-btn-basket {
     }
@@ -40,12 +47,15 @@
     margin: 0 auto;
 }
 // пока верстаю сразу под 2560
+.wrap-header{
+    display: flex;
+    justify-content: space-between;
+}
 .header {
     color: #333333;
     &__left {
     }
     &__left-title {
-        font-family: 'SF Pro Display';
         font-style: normal;
         font-weight: 700;
         font-size: 120px;
@@ -56,6 +66,10 @@
 
 
     &__left-text {
+    }
+    &__left-btn-wrap{
+        display: flex;
+        
     }
 
     &__left-btn-call {
@@ -68,6 +82,7 @@
     }
 }
 .huinia {
+    margin-right: 500px;
 }
 .li-item {
 }

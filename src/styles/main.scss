@@ -19,5 +19,19 @@ body{
     font-style: normal;
 }
 
+.button{
+    &--white{
+        padding: 14px 24px;
+        background-color: $white;
+        border-radius: 50px;
+    }
+    &--orange{
+        padding: 14px 24px;
+        background-color: $orange;
+        border-radius: 50px;
+        color: $white;
+    }
 
+
+}
 
