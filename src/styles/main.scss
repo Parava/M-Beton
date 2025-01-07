@@ -34,11 +34,26 @@ body{
     &__arrow{
 
         &--right{
+            position: relative;
+            &::after{
+                content: "";
+                background-image: url(../img/sprites/Arrow-right.png);
+                width: 45px;
+                height: 45px;
+                position: absolute;
+                background-repeat: no-repeat;
+                left: 200px;
+                top: 16px;
+                
+            }
 
         }
         &--left{
-            
+
         }
     }
 }
 
+#header-left-btn-calc{
+    padding-right: 45px;
+}

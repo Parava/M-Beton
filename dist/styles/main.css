@@ -415,6 +415,7 @@ header {
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -449,7 +450,7 @@ header {
   top: -10px;
 }
 
-.top-menu__left-item:active {
+.top-menu__left-item:hover {
   color: #D46C42;
 }
 
@@ -603,5 +604,85 @@ body {
   background-color: #D46C42;
   border-radius: 50px;
   color: #fff;
+}
+
+.button__arrow--right {
+  position: relative;
+}
+
+.button__arrow--right::after {
+  content: "";
+  background-image: url(../img/sprites/Arrow-right.png);
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 200px;
+  top: 16px;
+}
+
+#header-left-btn-calc {
+  padding-right: 45px;
+}
+
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1760px;
+  }
+
+  .header__left-title {
+    font-size: 105px;
+    line-height: 84.99%;
+    letter-spacing: -7px;
+    font-weight: 500;
+  }
+
+  .header__bg--left {
+    width: 53%;
+  }
+
+  .header__bg--right {
+    width: 47%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .header__bg--left {
+    width: 53%;
+  }
+
+  .header__bg--right {
+    width: 47%;
+  }
+
+  .top-menu__left-menu {
+    gap: 10px;
+  }
+
+  .top-menu__left-item--logo {
+    margin-left: -90px;
+  }
+
+  .top-menu__right {
+    margin-right: -60px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .top-menu__left-item--logo {
+    margin-left: -10px;
+  }
+
+  .top-menu__right {
+    margin-right: 10px;
+  }
+
+  .header__right > ol {
+    margin: 70px 150px;
+  }
 }
 /*# sourceMappingURL=maps/main.css.map */

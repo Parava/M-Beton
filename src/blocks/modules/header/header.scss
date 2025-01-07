@@ -24,6 +24,7 @@ header {
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     font-weight: 700;
     font-size: 16px;
@@ -60,7 +61,7 @@ header {
     }
 
     &__left-item {
-        &:active {
+        &:hover {
             color: $orange;
         }
     }
@@ -143,7 +144,10 @@ header {
 
     &__left-btn-call {}
 
-    &__left-btn-calc {}
+    &__left-btn-calc {
+        
+        
+    }
 
     &__right {
 
@@ -217,9 +221,71 @@ ol li:before {
 }
 
 
-@media (max-width: 1920px) {}
+@media (max-width: 1920px) {
+    .container{
+        max-width: 1760px;
+    }
+    .header{
+        &__left-title{
+            font-size: 105px;
+            line-height: 84.99%;
+            letter-spacing: -7px;
+            font-weight: 500;
+        }
+    }
+    .header__bg{
+        &--left {
+            width: 53%;
+        }
+        &--right {
+            width: 47%;
+        }
+    }
+}
 
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+    .container{
+        max-width: 1200px;
+    }
+    .header__bg{
+        &--left {
+            width: 53%;
+        }
+        &--right {
+            width: 47%;
+        }
+    }
+    .top-menu{
+        &__left-menu{
+            gap: 10px;
+        }
+        &__left-item--logo {
+            margin-left: -90px;
+        }
+        &__right{
+            margin-right: -60px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .top-menu{
+        
+        &__left-item--logo {
+            margin-left: -10px;
+        }
+        &__right {
+            margin-right: 10px;
+        }
+    }
+    .header{
+        &__right{
+            &>ol{
+                margin: 70px 150px;
+            }
+        }
+    }
+}
 
 @media (max-width: 780px) {}
 
