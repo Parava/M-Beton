@@ -17,6 +17,7 @@ header {
 
     &--right {
         width: 63%;
+        object-fit: cover;
     }
 }
 
@@ -29,6 +30,9 @@ header {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
+
+    padding-bottom: 12px;
+    border-bottom: 1px solid $grey;
 
     &__left-menu {
         display: flex;
@@ -285,19 +289,52 @@ ol li:before {
             margin-right: 10px;
         }
     }
-    .header{
-        &__right{
-            &>ol{
-                // margin: 70px 150px;
-            }
-        }
-    }
+    
 }
 
 @media (max-width: 1024px) {
-
+    .container {
+        max-width: 960px;
+    }
+    .top-menu{
+        font-size: 12px;
+        &__left-menu {
+            gap: 8px;
+        }
+        &__left-item--logo {
+            margin-left: 70px;
+        }
+    }
+    .header {
+        &__bg{
+            min-height: 900px;
+        }
+        &__left-title{
+            font-size: 75px;
+        }
+        &__bg--left {
+            width: 60%;
+        }
+        &__bg--right {
+            width: 40%;
+        }
+    }
+    .top-menu__right {
+        margin-right: 45px;
+        gap: 10px;
+        
+        &-btn-basket {
+            right: -55px;
+        }
+    }
+    .huinia {
+        margin-right: 0px;
+    }
+    header {
+        min-height: 900px;
+    }
 }
-
+// отсюда мобилка
 @media (max-width: 780px) {}
 
 @media (max-width: 420px) {}

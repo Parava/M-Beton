@@ -409,6 +409,7 @@ header {
 
 .header__bg--right {
   width: 63%;
+  object-fit: cover;
 }
 
 .top-menu {
@@ -419,6 +420,8 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .top-menu__left-menu {
@@ -687,6 +690,57 @@ body {
 
   .top-menu__right {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .top-menu {
+    font-size: 12px;
+  }
+
+  .top-menu__left-menu {
+    gap: 8px;
+  }
+
+  .top-menu__left-item--logo {
+    margin-left: 70px;
+  }
+
+  .header__bg {
+    min-height: 900px;
+  }
+
+  .header__left-title {
+    font-size: 75px;
+  }
+
+  .header__bg--left {
+    width: 60%;
+  }
+
+  .header__bg--right {
+    width: 40%;
+  }
+
+  .top-menu__right {
+    margin-right: 45px;
+    gap: 10px;
+  }
+
+  .top-menu__right-btn-basket {
+    right: -55px;
+  }
+
+  .huinia {
+    margin-right: 0px;
+  }
+
+  header {
+    min-height: 900px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
