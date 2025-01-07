@@ -526,10 +526,10 @@ header {
   list-style: none;
   font-size: 16px;
   padding: 0;
-  margin: 10px 0;
 }
 
 .huinia {
+  position: relative;
   margin-right: 500px;
   margin-top: 126px;
   max-width: 318px;
@@ -644,6 +644,10 @@ body {
   .header__bg--right {
     width: 47%;
   }
+
+  .huinia {
+    margin-right: 400px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -670,6 +674,10 @@ body {
   .top-menu__right {
     margin-right: -60px;
   }
+
+  .huinia {
+    margin-right: 130px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -679,10 +687,6 @@ body {
 
   .top-menu__right {
     margin-right: 10px;
-  }
-
-  .header__right > ol {
-    margin: 70px 150px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

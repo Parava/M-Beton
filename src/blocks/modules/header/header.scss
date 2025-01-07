@@ -155,12 +155,13 @@ header {
             list-style: none;
             font-size: 16px;
             padding: 0;
-            margin: 10px 0;
+            // margin: 10px 0;
         }
     }
 }
 
 .huinia {
+    position: relative;
     margin-right: 500px;
     margin-top: 126px;
     max-width: 318px;
@@ -241,6 +242,9 @@ ol li:before {
             width: 47%;
         }
     }
+    .huinia{
+        margin-right: 400px;
+    }
 }
 
 @media (max-width: 1600px) {
@@ -266,6 +270,9 @@ ol li:before {
             margin-right: -60px;
         }
     }
+    .huinia{
+        margin-right: 130px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -281,10 +288,14 @@ ol li:before {
     .header{
         &__right{
             &>ol{
-                margin: 70px 150px;
+                // margin: 70px 150px;
             }
         }
     }
+}
+
+@media (max-width: 1024px) {
+
 }
 
 @media (max-width: 780px) {}
